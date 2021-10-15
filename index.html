@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Калькулятор</title>
+</head>
+<body>
+ 	<form name="calc" class="wrapper">
+        <table class="main">
+            <tr class="display">
+                 <td colspan="4"><input type="text" name="input"></td>
+            </tr>
+            <tr class="buttons">
+                 <td><input class="inputButton" type="button" value="1" OnClick="add(1)"></td>
+                 <td><input class="inputButton" type="button" value="2" OnClick="add(2)"></td>
+                 <td><input class="inputButton" type="button" value="3" OnClick="add(3)"></td>
+                 <td><input class="inputButton" type="button" value="+" OnClick="selectedOperation('+')"></td>
+            </tr>
+            <tr class="buttons">
+                 <td><input class="inputButton" type="button" value="4" OnClick="add(4)"></td>
+                 <td><input class="inputButton" type="button" value="5" OnClick="add(5)"></td>
+                 <td><input class="inputButton" type="button" value="6" OnClick="add(6)"></td>
+                 <td><input class="inputButton" type="button" value="-" OnClick="selectedOperation('-')"></td>
+            </tr>
+            <tr class="buttons">
+                 <td><input class="inputButton" type="button" value="7" OnClick="add(7)"></td>
+                 <td ><input class="inputButton" type="button" value="8" OnClick="add(8)"></td>
+                 <td><input class="inputButton" type="button" value="9" OnClick="add(9)"></td>
+                 <td><input class="inputButton" type="button" value="x" OnClick="selectedOperation('*')"></td>
+            </tr>
+            <tr class="buttons">
+                 <td><input class="inputButton" type="reset" value="c" OnClick="clearCalc()"></td>
+                 <td><input class="inputButton" type="button" value="0" OnClick="add(0)"></td>
+                 <td><input class="inputButton" type="button" value="=" OnClick="getResult()"></td>
+                 <td><input class="inputButton" type="button" value="/" OnClick="selectedOperation('/')"></td>
+             </tr>
+       </table>
+      </form>
+      <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

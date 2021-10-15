@@ -1,0 +1,15 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	background: #232123;
+	border-radius: 5px;
+}
+
+.inputButton {
+	background-color: #23a432;
+}
+
